@@ -10,12 +10,12 @@ load_dotenv(override=True)
 
 
 BASE_API_URL = "https://api.langflow.astra.datastax.com"
-LANGFLOW_ID = "5b623b45-eef7-4b18-9d8f-4a05b7ed6132"
-FLOW_ID = "f0cf8997-e47e-499c-96d1-00ebf5491c46"
+LANGFLOW_ID = "73ed6dad-e50e-4c33-b0f2-96c64c5a093c"
+FLOW_ID = "4147aab8-c8ab-4f42-aecb-35edea9a0031"
 APPLICATION_TOKEN = os.getenv("APPLICATION_TOKEN")
 
 def ask_chat_bot(question):
-    TWEAKS = {"TextInput-AmSyK": {"input_value": question}}
+    TWEAKS = {"TextInput-ioxSO": {"input_value": question}}
     
     return run_flow_ask_chat_bot(
         "", tweaks=TWEAKS, application_token=APPLICATION_TOKEN
@@ -42,5 +42,3 @@ def run_flow_ask_chat_bot(message: str,
     response = requests.post(api_url, json=payload, headers=headers)
     return response.json()["outputs"][0]["outputs"][0]["results"]["message"]["text"]
 
-result = ask_chat_bot("Tell me something about reels")
-print(result)
