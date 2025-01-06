@@ -34,7 +34,7 @@ export default function ChatInterface() {
     setIsTyping(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/call_function', {
+      const response = await axios.post('https://wild-tooth-5997.ploomberapp.io/call_function', {
         question: input
       });
 
