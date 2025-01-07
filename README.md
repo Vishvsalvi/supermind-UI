@@ -2,6 +2,14 @@
 
 This project is a chat interface built with React and TypeScript. It allows users to interact with a bot by sending messages and receiving responses.
 Backend of the project: https://github.com/Vishvsalvi/supermind-backend
+
+## Video Demo
+
+
+https://github.com/user-attachments/assets/ab3c3bbd-8cb6-4452-a397-df24eae1ce12
+
+
+
 ## Features
 
 - User and bot messaging
